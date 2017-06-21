@@ -5,13 +5,12 @@ var MemoryGame = function() {
   var accountant = 0;
   this.cont = 0;
 
-  if (this.cont == 2) {
-    this.cont = 0;
 
 
 
 
-  }
+
+
   this.card1 = "";
   this.card2 = "";
   this.cards = [{
@@ -169,7 +168,7 @@ $(document).ready(function() {
     this.cont++;
     //console.log(this.id);
     console.log(this);
-    $(".back").toggleClass("back");
+    //$(".back").toggleClass("back");
     this.selectedCards[this.cont] = this.id;
     this.selectedCards.push(this.cards[this.cont].name);
     if (this.cont % 2 === 0) {
